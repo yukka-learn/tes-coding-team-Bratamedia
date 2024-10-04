@@ -11,7 +11,7 @@ export async function login(prev: unknown, formData: FormData) {
     cookies().set("session", "authenticated", {
       httpOnly: true,
       secure: process.env.NODE_ENV === "production",
-      maxAge: 60 * 60 * 24 * 7, // 1 week
+      maxAge: 60 * 60 * 24 * 7,
       path: "/",
     });
 
