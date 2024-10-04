@@ -55,7 +55,7 @@ Make sure you have the following installed:
    bun install
    ```
 
-3. Set up your environment variables. Create a .env.local file in the root directory and add your database connection string:
+3. Set up your environment variables. Create a `.env`. file in the root directory and add your database connection string:
 
    ```bash
    DATABASE_URL="your_neon_postgresql_connection_string"
