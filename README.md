@@ -26,7 +26,7 @@ To log in to the application, use the following credentials:
 - **Shadcn UI**: A UI component library for building modern applications.
 - **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
 - **Prisma**: A modern database toolkit for TypeScript and Node.js.
-- **Neon (PostgreSQL)**: A serverless PostgreSQL database solution.
+- **[Neon (PostgreSQL)](https://neon.tech/)** - A serverless PostgreSQL database solution.
 
 ## Getting Started
 
@@ -34,8 +34,8 @@ To log in to the application, use the following credentials:
 
 Make sure you have the following installed:
 
-- Node.js (v14 or later)
-- npm or yarn
+- Node.js (v16 or later)
+- npm or bun
 - Access to a Neon PostgreSQL database
 
 ### Installation
@@ -57,15 +57,21 @@ Make sure you have the following installed:
 
 3. Set up your environment variables. Create a .env.local file in the root directory and add your database connection string:
 
-```bash
-DATABASE_URL="your_neon_postgresql_connection_string"
-```
+   ```bash
+   DATABASE_URL="your_neon_postgresql_connection_string"
+   ```
 
 4. Run the Prisma migration to set up your database:
 
-```bash
-npx prisma migrate dev --name init
-```
+   ```bash
+   npx prisma migrate dev --name init
+   ```
+
+5. Run Generate Prisma Type:
+
+   ```bash
+   npx prisma generate
+   ```
 
 ### Running the Application
 
