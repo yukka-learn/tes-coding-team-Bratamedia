@@ -2,7 +2,6 @@ import { db } from "@/lib/db";
 import { TableDemo } from "./student-list";
 import StudentForm from "./student-form";
 
-
 export default async function StudentsPage() {
   const students = await db.student.findMany({
     include: {
@@ -16,9 +15,10 @@ export default async function StudentsPage() {
 
   console.log(students);
   return (
-    <div className="py-10">
+    <div>
       <StudentForm />
-      <div>
+      <div className="container mx-auto py-20 px-20">
+        <h1 className="text-2xl font-bold pb-2">Students Data</h1>
         <TableDemo
           students={students.map((student) => ({
             ...student,

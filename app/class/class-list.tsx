@@ -16,7 +16,7 @@ import BtnDelete from "@/components/btn-delete";
 
 export default function ClassTable({ classess }: { classess: ClassFetch[] }) {
   return (
-    <div className="container mx-auto py-20 px-20">
+    <div>
       <Table>
         <TableCaption>A list of your recent class.</TableCaption>
         <TableHeader>

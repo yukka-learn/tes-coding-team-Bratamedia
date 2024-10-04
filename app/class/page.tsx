@@ -20,7 +20,10 @@ export default async function ClassPage() {
   return (
     <div>
       <CreateClassForm />
-      <ClassTable classess={classess} />
+      <div className="container mx-auto py-20 px-20">
+        <h1 className="text-2xl font-bold pb-2">Class Data</h1>
+        <ClassTable classess={classess} />
+      </div>
     </div>
   );
 }
